@@ -1,12 +1,4 @@
-const express = require('express')
-const app = express()
-const port = 3000
+import express from 'express';
+const app = express();
 
-
-app.get('/', (req, res) => res.send('Hello World from Server API!'))
-
-app.get('/health',(res,req) => res.send('Server is healthy!'))
-
-app.listen(port, () =>
- console.log(`Server Running On http://localhost:${port}`
- ))
+export default app;
