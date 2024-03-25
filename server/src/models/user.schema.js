@@ -1,6 +1,8 @@
 import mongoose from 'mongoose';
 import bcrypt from 'bcryptjs';
+import JWT from 'jsonwebtoken';
 import  AuthRoutes from '../utils/authRoles';
+import config from '../config/index';
 
 const userSchema = new mongoose.Schema(
     {
@@ -47,10 +49,27 @@ userSchema.pre('save',async function(next){
        next();
     }
 })
+
 // Decrypting password
 userSchema.methods = {
     comparePassword : async function(enteredPassword){
         return await bcrypt.compare(enteredPassword,this.password)
+    },
+
+    // Generating Token Using JSON Web Token
+    generateToken : function(){
+        return JWT.sign({_id : this._id},config.JWT_SECRET,{
+            expiresIn : config.JWT_EXPIRE
+        })
+    },
+
+    // Generating Forgot Password Token 
+    generateForgotPasswordToken : function(){
+        const forgotToken = crypto.randomBytes(20).toString('hex');
+        this.forgotPasswordToken = crypto.createHash('sha256').update(forgotToken).digest('hex');
+        //token expires in 30 minutes from generation time
+        this.forgotPasswordExpire = Date.now() + 30 * 60 * 1000;
+        return forgotToken;
     }
 }
 
