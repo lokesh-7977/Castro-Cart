@@ -1,7 +1,7 @@
-import User from '../models/user.schema';
+import User from '../models/user.schema.js';
 
-import handler from "../services/handler";
-import CustomError from "../services/customError";
+import handler from "../services/handler.js";
+import CustomError from "../services/customError.js";
 
 export const cookieOptions = {
   expires: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000),
@@ -78,7 +78,7 @@ export const logout = handler(async (req, res) => {
   })
 })
 
-const getProfile = handler(async (req, res) => {
+export const getProfile = handler(async (req, res) => {
 
 const {user} = req;
 if(!user){
