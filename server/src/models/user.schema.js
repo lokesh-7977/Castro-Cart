@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
-import bcrypt from 'bcryptjs';
+import bcrypt from 'bcrypt';
 import JWT from 'jsonwebtoken';
-import  AuthRoutes from '../utils/authRoles';
-import config from '../config/index';
+import  AuthRoutes from '../utils/authRoles.js';
+import config from '../config/index.js';
 
 const userSchema = new mongoose.Schema(
     {
