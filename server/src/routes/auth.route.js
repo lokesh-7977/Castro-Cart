@@ -13,4 +13,4 @@ router.get('/profile',isLoggedIn,getProfile)
 
 
 
-export default Router;
+export default router;
