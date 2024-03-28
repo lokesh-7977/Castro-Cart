@@ -1,13 +1,9 @@
-const handler = (fn) => async (req, res,next) => {
+const handler = (fn) => async (req, res, next) => {
     try {
-        await fn(req, res,next);
-
+        await fn(req, res, next);
     } catch (error) {
-        res.status(error.code).json({
-            success: false,
-            message: error.message
-        })
+        next(error); 
     }
-}
+};
 
 export default handler;
