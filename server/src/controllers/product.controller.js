@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 import formidable from "formidable";
-import Product from "../models/product.schema";
-import { s3FileDelete, s3FileUpload } from "../services/imageUpload";
-import handler from "../services/handler";
-import CustomError from "../services/customError";
+import Product from "../models/product.schema.js";
+import { s3FileDelete, s3FileUpload } from "../services/imageUpload.js";
+import handler from "../services/handler.js";
+import CustomError from "../services/customError.js";
 import fs from "fs";
 
 export const addProduct = handler(async (req, res) => {
@@ -154,6 +154,6 @@ export const deleteProduct = handler(async (req, res) => {
   res.json({
     success: true,
     message: "Product deleted successfully",
-    product,
+    product
   });
 });

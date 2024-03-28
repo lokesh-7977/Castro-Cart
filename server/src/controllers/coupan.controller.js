@@ -46,7 +46,7 @@ export const updateCoupan = handler(async (req, res) => {
 })
 
 
-export const deleteCoupan = handler(async (req, res) => {
+export const deleleCoupan = handler(async (req, res) => {
     const { id } = req.params;
     const coupan = await Coupan.findByIdAndDelete(id);
 

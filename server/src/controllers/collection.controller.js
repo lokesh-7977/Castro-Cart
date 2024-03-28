@@ -1,6 +1,6 @@
-import Collection from "../models/collection.schema";
-import handler from "../services/handler";
-import CustomError from "../services/customError";
+import Collection from "../models/collection.schema.js";
+import handler from "../services/handler.js";
+import CustomError from "../services/customError.js";
 
 
 export const createCollection = handler(async (req, res) => {
