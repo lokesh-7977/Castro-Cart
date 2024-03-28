@@ -18,9 +18,10 @@ app.get("/", (_req, res) => {
 });
 
 app.use("/api", routes);
-
-
-
+app.use("/api/products", routes);
+app.use("/api/collections", routes);
+app.use("/api/orders", routes);
+app.use("/api/coupons", routes);
 
 
 app.all("*", (req, res) => {
