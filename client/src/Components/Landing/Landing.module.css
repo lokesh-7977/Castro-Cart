@@ -49,15 +49,13 @@
 }
 
 .paragraph {
-  text-align:center;
+  text-align: center;
   color: #484848;
   font-weight: 200;
   font-size: 2rem;
 }
 p {
-
   padding-left: 30px;
-
 }
 
 .button {
