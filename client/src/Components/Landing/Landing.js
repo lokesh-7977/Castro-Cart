@@ -14,22 +14,22 @@ const Landing = () => {
           <img className={styles.leftImg} src={LeftImg} alt="Left Img" />
         </div>
 
-        <div>
+        <div className={styles.centerImages}>
           <div className={styles.m_container}>
             <img src={centerUp} alt="Center img" />
           </div>
             <div className={styles.heading}>ULTIMATE</div>
           <div className={styles.middle}>
-            <img src={middle} alt="Land Middle" />
+            <img src={middle} className={styles.middle_img} alt="Land Middle" />
           </div>
           <div className={styles.paragraph}>
             <p>NEW COLLECTION</p>
             </div>
-          <div className={styles.button}>
+          <div className={styles.btn}>
           <button>Shop Now</button>
           </div>
           <div className={styles.downImg}>
-            <img src={centerDown} alt="Down Img" />
+            <img src={centerDown} className={styles.centerDown} alt="Down Img" />
           </div>
         </div>
         <div className={styles.flcontainer}>

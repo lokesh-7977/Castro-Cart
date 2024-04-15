@@ -1,11 +1,13 @@
 import React from "react";
 
-import Navbar from "./Components/Navbar/Navbar";
-import Landing from "./Components/Landing/Landing";
-import Brands from "./Components/BrandBars/Brands";
-import Deals from "./Components/Deals/Deals";
-import Subscribers from "./Components/Subsribers/Subscribers";
-import Footer from "./Components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import Landing from "./components/Landing/Landing";
+import Brands from "./components/BrandBars/Brands";
+import Offers from "./components/Offers/Offer";
+import Deals from "./components/Deals/Deals";
+import Subscribers from "./components/Subsribers/Subscribers";
+import Footer from "./components/Footer/Footer";
+
 
 const App = () => {
   return (
@@ -13,6 +15,7 @@ const App = () => {
       <Navbar />
       <Landing />
       <Brands />
+      <Offers />
       <Deals />
       <Subscribers />
       <Footer />
