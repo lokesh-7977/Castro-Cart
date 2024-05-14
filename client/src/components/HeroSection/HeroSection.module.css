@@ -1,0 +1,60 @@
+.hero_section {
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(180deg, #996d6d 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.hero_left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    gap : 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+
+.hero_left h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.hero_left p {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon img {
+    width: 105px;
+
+}
+
+.latestBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #ff4141;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+
+
+
+
+
+}
