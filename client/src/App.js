@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./Components/Navbar/Navbar";
 import Shop from "./Pages/Shop";
 import ShopCategory from "./Pages/ShopCategory";
 import Products from "./Pages/Products";
 import Cart from "./Pages/Cart";
 import Auth from "./Pages/Auth";
-import Footer from "./components/Footer/Footer";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   return (

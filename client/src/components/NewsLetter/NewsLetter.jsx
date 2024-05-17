@@ -9,10 +9,9 @@ const NewsLetter = () => {
         <p>
           Subscribe to our newsletter and get exclusive offers & stay updated
         </p>
-      </div>
-      <div>
-      <input type="email" placeholder="Enter Your Email" />
-      <button>Subscribe</button>
+
+        <input type="email" placeholder="Enter Your Email" />
+        <button>Subscribe</button>
       </div>
     </>
   );
