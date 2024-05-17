@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import Shop from "./pages/Shop";
-import ShopCategory from "./pages/ShopCategory";
-import Products from "./pages/Products";
-import Cart from "./pages/Cart";
-import Auth from "./pages/Auth";
+import Shop from "./Pages/Shop";
+import ShopCategory from "./Pages/ShopCategory";
+import Products from "./Pages/Products";
+import Cart from "./Pages/Cart";
+import Auth from "./Pages/Auth";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
