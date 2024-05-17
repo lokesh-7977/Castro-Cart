@@ -6,6 +6,7 @@ import ShopCategory from "./pages/ShopCategory";
 import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 import Auth from "./pages/Auth";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/login" element={< Auth/>} />
         </Routes>
       </Router>
+      <Footer />
     </>
   );
 };
